@@ -7,3 +7,4 @@ const source = fs.readFileSync(inboxPath, 'utf-8');
 
 
 module.exports = solc.compile(source, 1).contracts[':Inbox']; // 1 refers the no of contracts we are compiling, in this case it is 1.
+// The inbox contract has 2 properties interface - javascript abi and bytecode - raw code of the contract
